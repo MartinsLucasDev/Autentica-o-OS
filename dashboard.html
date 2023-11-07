@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles_common.css">
+    <link rel="stylesheet" href="styles_dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <div class="profile">
+                <img src="PERFIL_IMG.jpg" alt="Perfil do Usuário">
+            </div>
+            <button id="dark-mode-toggle" class="dark-mode-button">Dark Mode</button>
+        </header>
+        <div class="panel">
+            <div class="box">
+                <h3>Notificações</h3>
+                <p>Aqui você pode ver suas notificações.</p>
+            </div>
+            <div class="box">
+                <h3>Dados do Perfil</h3>
+                <p>Informações sobre o seu perfil.</p>
+            </div>
+            <div class="box">
+                <h3>Configurações</h3>
+                <p>Opções de configuração da conta.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const darkModeButton = document.getElementById('dark-mode-toggle');
+        darkModeButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
